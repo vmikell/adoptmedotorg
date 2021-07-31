@@ -1,0 +1,13 @@
+@use 'variables';
+
+
+// IMPORT GLOBAL
+@use 'global';
+// IMPORT SECTIONS
+@use 'sections/navbar';
+@use 'sections/heroImage';
+@use 'sections/middle';
+@use 'sections/programs';
+@use 'sections/footer';
+
+

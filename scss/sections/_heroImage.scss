@@ -1,0 +1,95 @@
+@use '../variables' as *;
+
+.hero {
+  width: 100%;
+  position: relative;
+  top: 0rem;
+  z-index: 0;
+
+  &--img {
+    position: relative;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  h1 {
+    position: absolute;
+
+    @include media-breakpoint-down(sm) {
+      right: 1rem;
+      bottom: 0.2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  button {
+    position: absolute;
+    left: 6rem;
+    bottom: 1.5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 2px solid $color-red;
+    border-radius: 0;
+    color: $color-red;
+    padding: 0.25rem 0.5rem 0.25rem 0.45rem;
+    overflow: hidden;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $color-red;
+    }
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      content: '';
+      margin: auto;
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      background: $color-red;
+      transition: all 0.5s;
+      transform: scale(0);
+      z-index: -1;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+      top: 0;
+      left: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      bottom: 0.5rem;
+      left: 1rem;
+    }
+  }
+
+  &--text-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(#000, 0.3);
+    z-index: 2;
+
+    @include media-breakpoint-down(sm) {
+      height: 3.5rem;
+    }
+  }
+
+  &--image-text {
+    width: 100%;
+    overflow: hidden;
+    height: 7.5rem;
+    font-family: $font-family-primary;
+    font-size: $font-family-h1;
+    font-weight: $font-weight-h1;
+    color: $color-red;
+    position: absolute;
+    bottom: 0;
+    padding-left: 6rem;
+  }
+}

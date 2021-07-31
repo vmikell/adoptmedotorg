@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptme.Org</title>
+  <link rel="shortcut icon" type="image/jpg" href="./img/logo-black.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar starts here -->
+
+  <div class="navbar-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white d-flex" href="#">
+          <img src="./img/logo.png" alt="adopt me dot org logo">
+          <h1>Adoptme.Org</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">WHAT we do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">WHO we are</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">EVENTS adoption</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- hero image starts here -->
+
+  <section class="hero shadow">
+    <div class="hero-wrapper">
+      <div class="hero--img">
+        <img src="./img/dogs.jpg" alt="adoptme.org three dogs image" class="img-fluid">
+      </div>
+      <div class="hero--text-wrapper">
+        <div class="hero--image-text">
+          <h1>This is your new family!</h1>
+        </div>
+        <button class="btn btn-primary btn-hero">adopt now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- middle section starts here -->
+
+  <section class="middle">
+    <div class="container-fluid p-0">
+      <div class="row d-flex p-0">
+
+        <!-- volunteer card starts here -->
+
+        <div class="col-md-4 pb-0">
+          <div class="volunteer-card shadow rounded-0">
+            <div class="card-header volunteer-header text-white rounded-0">
+              volunteers
+            </div>
+            <img src="./img/girl.png" alt="adoptme.org girl holding dog image" class="img-fluid">
+            <div class="card-body p-5">
+              <p class="volunteer--card-text">Amazing people, doing the
+                difference every single day. Join us now and be a part of a
+                community that is changing the world.</p>
+              <button class="btn btn-primary btn-volunteer">join us</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- testimonial card starts here -->
+
+        <div class="col-md-8">
+          <div class="card testimonial-card shadow rounded-0" aria-label="adoptme.org YouTube video player">
+            <h5 class="card-header testimonial-card--header text-white rounded-0">testimonial of the month</h5>
+            <div class="container embed-responsive embed-responsive-16by9"></div>
+
+            <!-- vue injection starts here -->
+
+            <div id="app"></div>
+
+            <!-- vue injection ends & markup resumes here -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- programs section starts here -->
+
+  <section class="programs">
+    <div class="programs--header-links pb-5">
+      <a href="#" class="programs--link-effect">programs</a>
+      <a href="#" class="programs--link-effect-2 disabled">associated companies</a>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+
+          <!-- behavior program starts here -->
+
+          <div class="row left pb-5">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 text-start">
+              <img src="./img/friend-in-trouble.png" alt="adoptme.org dog in doghouse image"
+                class="img-fluid left--dogs">
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 left--text">
+              <h2>behavior program</h2>
+              <p>Evaluation of each dog using specialists who determine the best training that will help your friend be
+                a better family member</p>
+              <button class="btn btn-primary">leer mÁs</button>
+            </div>
+          </div>
+
+          <!-- my next family starts here -->
+
+          <div class="row left">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+              <img src="./img/family.jpg" alt="adoptme.org dog in doghouse image" class="img-fluid left--dogs">
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 left--text">
+              <h2>my next family</h2>
+              <p>Are you looking for a new family member? Then, this program is for you. Don't buy, adopt here, and
+                let's give a home to these amazing friends</p>
+              <div class="btn-wrapper justify-content-start">
+                <button class="btn btn-primary">leer mÁs</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- backpack dog img starts here -->
+
+        <div class=" col-lg-4 col-md-12 col-sm-12 text-end">
+          <img src="./img/dog-2.jpg" alt="adoptme.org service dog" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer starts here -->
+  <section class="footer">
+    <div class="container-fluid">
+      <div class="row pt-5">
+        <div class="col-md-4 text-white">
+
+          <!-- footer brand info starts here -->
+
+          <div class="footer--logo-wrapper d-flex">
+            <a href="#"><img src="./img/logo.png" alt=""></a>
+            <h1>Adoptme.Org</h1>
+          </div>
+          <div class="footer--info-wrapper">
+            <p>main st #1245</p>
+            <p>amazing city, 45677</p>
+          </div>
+        </div>
+
+        <!-- footer nav starts here -->
+
+        <div class="col-md-8 text-white footer--list">
+          <ul>
+            <li><a href="#">WHAT we do</a></li>
+            <li><a href="#">WHO we are</a></li>
+            <li><a href="#">EVENTS adoption</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-white">
+        <div class="footer--credits">
+          <p>some images were taken from <a href="https://unsplash.com">unsplash.com</a> || This site was assembled by
+            <a href="https://victormikell.com">Victor Mikell</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- import vue app -->
+  <script src="./index.js"></script>
+  <!-- mount app -->
+  <script>
+    const mountedApp = app.mount( '#app' )
+  </script>
+</body>
+
+</html>

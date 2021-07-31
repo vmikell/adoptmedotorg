@@ -1,0 +1,23 @@
+{
+  "name": "adopt-me-assets",
+  "version": "1.0.0",
+  "description": "adopt-me-org",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:public",
+    "json:server": "json-server --watch db.json --port 8080"
+  },
+  "author": "Victor Mikell",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.36.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "json-server": "^0.16.3",
+    "postcss-cli": "^8.3.1",
+    "vue-axios": "^3.2.5"
+  }
+}
