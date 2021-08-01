@@ -4,7 +4,7 @@
   "description": "adopt-me-org",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss:public",
+    "compile:sass": "sass --watch scss:assets",
     "json:server": "json-server --watch db.json --port 8080"
   },
   "author": "Victor Mikell",
@@ -14,10 +14,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.3.1",
-    "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "json-server": "^0.16.3",
-    "postcss-cli": "^8.3.1",
-    "vue-axios": "^3.2.5"
+    "postcss-cli": "^8.3.1"
   }
 }

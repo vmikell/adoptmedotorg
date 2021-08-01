@@ -45,6 +45,7 @@
 
       transition: transform 250ms ease-in;
     }
+
     &:hover::before {
       transform: scaleX(1);
     }
@@ -76,13 +77,17 @@
         display: flex;
         margin-left: -1.5rem;
       }
+
+      @include media-breakpoint-down(lg){
+        margin:auto;        
+      }
     }
 
     &--text {
       padding-left: 0;
       margin-left: -2rem;
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         margin: 0;
       }
     }
@@ -152,7 +157,7 @@
     @include media-breakpoint-down(lg) {
       display: block;
       margin: auto;
-    }
+    }    
   }
 
   img {
@@ -162,5 +167,9 @@
       display: flex;
       margin-right: -2.5rem;
     }
+
+     @include media-breakpoint-down(lg){
+        margin:auto;
+      }
   }
 }

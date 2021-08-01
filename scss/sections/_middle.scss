@@ -17,6 +17,7 @@
       padding: 0;
     }
   }
+
   .volunteer-header,
   .testimonial--header {
     font-family: $font-family-secondary;
@@ -54,6 +55,7 @@
       background: $color-blue;
       transition: all 0.5s;
       transform: scale(0);
+
       z-index: -1;
     }
 
@@ -63,13 +65,14 @@
       left: 0;
     }
   }
+
   .testimonial-card {
     position: relative;
     height: 100%;
     background-image: url('./img/testimonial.jpg');
     background-size: cover;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-top: 2rem;
       min-height: 30rem;
     }
@@ -77,27 +80,27 @@
     &--header {
       background-color: $color-red;
       text-transform: uppercase;
-      
     }
+
     button {
       background-color: transparent;
       border: none;
     }
+
     iframe {
       height: 100%;
       // visibility: hidden;
     }
 
-    h4{
+    h4 {
       position: absolute;
       top: 4rem;
       left: 4rem;
 
-      @include media-breakpoint-down(sm){
-        left:0;
+      @include media-breakpoint-down(sm) {
+        left: 0;
         text-align: center;
         padding: 2rem;
-
       }
     }
     svg {
@@ -107,7 +110,7 @@
       left: 50%;
       transform: translate(-48px, -48px);
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(xl) {
         color: rgba($white, 0.5);
       }
     }

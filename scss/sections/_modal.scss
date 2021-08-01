@@ -1,0 +1,87 @@
+@use '../variables' as *;
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  align-items: center;
+  
+  
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.85);
+
+  z-index: 3;
+
+  &--card{
+    position: fixed;
+    height: 350px;
+    width: 350px;
+    background-color: white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-175px, -175px);
+
+    &-header{
+      background: $color-red;
+      padding: .35rem;
+      font-family: $font-family-secondary;
+
+      h1{
+        padding-top: 1rem
+      }
+
+      button{
+        border: none;
+        background-color: transparent;
+      }
+
+      svg{
+        position: absolute;
+        top:.25rem;
+        right:.25rem;
+      }
+    }
+
+    &-text{
+      padding: 1.5rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+
+    &-footer{
+      position: relative;
+      background-color: $color-blue;
+      height: 2rem;
+      bottom: -40px;
+      
+      &::before{
+        position:absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $color-red;
+      }
+    }
+  }
+
+  .donate-button{
+    position: absolute;
+    border: 2px solid $color-red;
+    background-color: transparent;
+    color: $color-red;
+    width: 150px;
+    left: 50%;
+    transform: translate(-75px);
+    bottom: 2rem;
+  }
+}
+
+.visible{
+  position: absolute;
+  // visibility: hidden;
+  // left: -9999px;
+}

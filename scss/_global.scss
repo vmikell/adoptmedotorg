@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
-
 html,
-body{
+body {
+  position: relative;
   overflow-x: hidden;
 }
